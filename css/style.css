@@ -1,0 +1,461 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E9ECEF;
+}
+
+
+
+
+
+
+/*Side bar*/
+
+.sidebar {
+    background-color: #1D2553;
+    width: 110px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home {
+    background-color: #FF6A00;
+    padding: 7px 20px 13px 20px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home img {
+    width: 50px
+}
+
+.single-item {
+    width: 110px;
+    padding: 15px 10px;
+    cursor: pointer;
+    text-align: center
+}
+
+.single-item img {
+    padding-bottom: 10px;
+}
+
+.active {
+    background-color: #003679 !important;
+    border-left: 4px solid #FF6A00 !important;
+}
+
+.single-item:hover {
+    background-color: #003679;
+    border-left: 4px solid #FF6A00 !important;
+}
+
+
+.bb {
+    border-bottom: 1px solid #FF4AE1;
+}
+
+.sets {
+    display: flex;
+    flex-direction: column;
+}
+
+.sets img {
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.logout {
+    padding: 15px 10px;
+    margin-top: 200px;
+    cursor: pointer;
+}
+
+
+#wrapper {
+    /*        padding-left: 250px;*/
+    transition: all 0.4s ease 0s;
+}
+
+/*
+#sidebar-wrapper {
+    margin-left: -250px;
+    left: 250px;
+    width: 110px;
+    height: 100%;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+}
+*/
+
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 110px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+        /* padding-left: 0; */
+
+
+    }
+}
+
+
+
+.page-content {
+    padding-left: 110px;
+}
+
+
+/* header */
+
+
+
+.header {
+    background-color: white;
+
+
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dropdown {
+    margin-top: 10px;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown button {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 19px;
+    padding: 5px;
+    outline: none;
+    margin: 0px 3px;
+}
+
+.dropdown button span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    margin: 0px 7px;
+    cursor: pointer;
+}
+
+.form-control.mr-sm-2 {
+    padding: 21px !important;
+    border-radius: 20px;
+    background-color: #F6F7FA;
+    width: 250px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 80px;
+}
+
+.profile h4 {
+    width: 160px;
+}
+
+.profile h4 span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: black !important;
+    content: "/";
+}
+
+.breadcrumb-item.active {
+    background-color: #E9ECEF !important;
+    font-weight: 600;
+    color: black !important;
+    border-left: none !important;
+}
+
+.breadcrumb-item a {
+    color: black !important;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: none;
+}
+
+
+
+button {
+    border: none;
+    outline: none;
+    margin: 0px 10px;
+    color: white;
+}
+
+.reload {
+    padding: 5px 7px;
+    background-color: white;
+}
+
+.create {
+    background-color: #FAAF7C;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.create img {
+    padding-right: 10px;
+}
+
+.request {
+    background-color: #FF6A00;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.request img {
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+.tabs {
+    margin-top: -20px;
+}
+
+#home,
+#menu1 {
+    background-color: white !important;
+    border-left: none !important;
+}
+
+.nav.nav-tabs li {
+    background-color: white !important;
+    border-left: none !important;
+    background-color: #F1F1FF;
+}
+
+.nav.nav-tabs li a {
+    text-decoration: none;
+    color: #666C8C;
+    padding: 10px 12px !important;
+    font-weight: 600;
+    background-color: #F1F1FF;
+}
+
+.nav.nav-tabs li a.active {
+    background-color: white !important;
+    border-left: none !important;
+    color: #FF6A00;
+    border-bottom: 2px solid #FF6A00;
+}
+
+
+
+.tab-content {
+    margin-top: 10px;
+}
+
+
+.tab-content .breadcrumb {
+    background-color: white !important;
+}
+
+.tab-content .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #5D6384 !important;
+    content: ">";
+}
+
+.tab-content .breadcrumb-item a {
+    color: #5D6384 !important;
+
+}
+
+.tab-content .breadcrumb-item a:hover {
+    text-decoration: none;
+}
+
+.tab-content .breadcrumb-item.active {
+    background-color: white !important;
+    color: #FF6A00 !important;
+    border-left: none !important;
+}
+
+
+
+.asset-table {
+    background-color: #F6F7FA;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.asset-table th {
+    color: #5D6384;
+}
+
+.asset-table .table td,
+.table th {
+    padding: 5px 0px !important;
+    vertical-align: top;
+}
+
+.asset-img {
+    padding: 10px 0px 0px 10px;
+    border-left: 1px solid #ddd;
+}
+
+.bg-bl {
+    background-color: #5D6384 !important;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: -5px;
+}
+
+
+.border-table .table td,
+.table th {
+    color: #5D6384;
+    font-weight: 400;
+    padding-left: 5px;
+    /*    text-align: center;*/
+}
+
+.border-table .table {
+    border: 1px solid #5D6384;
+
+}
+
+.border-table {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+.wo-name-form {
+    background-color: #F6F7FA;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+
+
+
+
+.check-radio {
+    border-right: 1px solid #ddd;
+}
+
+.wo-intervl-area {
+    background-color: #F6F7FA;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+
+.form-check {
+    padding-bottom: 10px;
+}
+
+.one {
+    padding-bottom: 20px;
+}
+
+.bbwo {
+    border-bottom: 1px solid ##DBDBDB !important;
+}
+
+.date {
+    border-top: 1px solid #ddd;
+}
+
+.date h6 {
+    padding: 10px;
+}
+
+.date p {
+    font-size: 10px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+.search-wo {
+    padding: 10px;
+}
+
+.search-wo input {
+    border-radius: 5px !important;
+    margin-right: 20px;
+}
+
+.bbfull {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.submit-wo {
+    padding-bottom: 20px;
+}
+
+.submit-wo button {
+    padding: 10px 25px;
+}
